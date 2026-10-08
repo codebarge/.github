@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://gitlab.com/codebarge/barge/-/blob/main/DOCUMENTATION.md">Documentation</a> ·
-  <a href="https://github.com/codebarge/barge/releases">Releases</a> ·
+  <a href="https://gitlab.com/codebarge/barge/-/releases">Releases</a> ·
   <a href="https://gitlab.com/codebarge/barge/-/blob/main/CHANGELOG.md">Changelog</a> ·
   <a href="https://gitlab.com/codebarge/barge">GitLab</a>
 </p>
@@ -47,7 +47,7 @@ module, who should become a second owner, whose knowledge to capture first.
 - `barge scan --only 'pkg/*' --fail-on critical`: watch one part of a monorepo in CI
 
 Binaries for Linux, macOS and Windows are on the
-[releases page](https://github.com/codebarge/barge/releases).
+[releases page](https://gitlab.com/codebarge/barge/-/releases).
 
 ### Repositories
 
