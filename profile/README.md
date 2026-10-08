@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Barge_icon.png" width="120" alt="Barge logo">
+  <img src="/Barge_icon.png" width="120" alt="Barge logo">
 </p>
 
 <h3 align="center">Find the code only one person knows — before they leave.</h3>
