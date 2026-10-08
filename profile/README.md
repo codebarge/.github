@@ -30,21 +30,23 @@ go install gitlab.com/codebarge/barge/cmd/barge@latest
 barge scan ~/code/your-project
 ```
 
-```
-RISK      BUS    AI  MODULE                  WHO KNOWS IT
-critical    0     –  internal/paths          Dmitry 95% (inactive)
-high        1   30%  pkg/compose             Oleg 56%, Anna 27%, Max 8%
-high        1     –  relay                   Oleg 100%
-medium      2   20%  cmd/compose             Oleg 52%, Anna 26%, Max 12%
-```
+<p align="center"><img src="scan.png" alt="barge scan on a demo repository: modules from the riskiest, who knows each one, and what to do next" width="820"></p>
 
 Every scan ends with concrete next steps: who should take over an orphaned
 module, who should become a second owner, whose knowledge to capture first.
 
-- `barge scan --leaving oleg@acme.io`: see what breaks if someone leaves
-- `barge handover oleg@acme.io -o handover.md`: a checklist of what only they
-  know, a successor for each module and the questions worth asking
-- `barge scan --only 'pkg/*' --fail-on critical`: watch one part of a monorepo in CI
+**What if someone leaves?** `barge scan --leaving oleg@acme.io` shows what
+becomes critical without them, before it happens:
+
+<p align="center"><img src="leaving.png" alt="barge scan --leaving" width="820"></p>
+
+**Before they go**, `barge handover oleg@acme.io -o handover.md` writes a
+checklist: the modules only they know, a successor for each, their files and
+the questions worth asking:
+
+<p align="center"><img src="handover.png" alt="A handover checklist" width="640"></p>
+
+<sub>Screenshots from a demo repository; the team is fictional.</sub>
 
 Binaries for Linux, macOS and Windows are on the
 [releases page](https://gitlab.com/codebarge/barge/-/releases).
